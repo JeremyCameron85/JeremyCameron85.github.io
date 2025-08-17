@@ -9,13 +9,17 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
+            line-height: 1.6;
+            color: #333;
         }
+
+        /* Title Section */
         .title-section {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 50vh;
             background: linear-gradient(135deg, #4a90e2, #50e3c2);
             color: white;
             text-align: center;
@@ -29,12 +33,114 @@
             margin: 0.2em 0;
             font-weight: normal;
         }
+
+        /* Section Styling */
+        section {
+            max-width: 900px;
+            margin: 3em auto;
+            padding: 2em;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            color: #4a90e2;
+            border-bottom: 2px solid #50e3c2;
+            padding-bottom: 0.3em;
+        }
+        section img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 1em 0;
+        }
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <!-- Title Section -->
     <div class="title-section">
         <h1>Jeremy Cameron</h1>
         <h2>SNHU CS499 Capstone Project</h2>
     </div>
+
+    <!-- Professional Self-Assessment -->
+    <section id="self-assessment">
+        <h2>Professional Self-Assessment</h2>
+        <p>
+            I am a software developer with a strong foundation in full-stack development, software engineering principles, and data structures. Through my academic projects, I have focused on creating modular, maintainable, and efficient software while continuously expanding my technical skills. By completing the enhancements included in this ePortfolio, I applied new frameworks and technologies, such as Node.js, Express, Tries, and MongoDB, while refining my understanding of modular design, encapsulation, validation, and testing.
+        </p>
+        <p>
+            These projects required careful consideration of design trade-offs, problem-solving to integrate new features into existing systems, and managing the complexity of full-stack development. Through this process, I strengthened my ability to implement best practices, develop reusable and maintainable code, and connect backend services to functional user interfaces. The experience also improved my project planning and time management skills, as I navigated challenges that arose when transitioning between languages, integrating data structures, and building database-backed systems.
+        </p>
+        <p>
+            Overall, this ePortfolio reflects my technical growth, my ability to evaluate and implement effective solutions, and my commitment to producing high-quality software. It provides clear evidence of my capacity to learn new technologies, apply software engineering principles effectively, and adapt to complex development challenges.
+        </p>
+    </section>
+
+    <!-- Code Review -->
+    <section id="code-review">
+        <h2>Code Review</h2>
+        <p>
+            Code reviews are a critical part of the software development process, as they ensure code is functional, secure, and aligned with best practices. By evaluating aspects such as functionality, validation, and error handling, code reviews not only identify bugs and weaknesses early, saving time and reducing costs, but also reinforce coding standards and highlight strengths in implementation. Additionally, when incorporated as peer reviews, they encourage collaboration and knowledge sharing among team members, which ultimately leads to more reliable, maintainable, and professional-quality software.
+        </p>
+        <p>
+            <a href="https://youtu.be/DSoFzzOHXmw" target="_blank">Watch Code Review Video</a>
+        </p>
+    </section>
+
+    <!-- Original Artifact -->
+    <section id="original-artifact">
+        <h2>Original Artifact</h2>
+        <p>
+            The original artifact is a Java-based application developed during my CS320 course in August 2024, designed to manage contacts, tasks, and appointments. It implements full CRUD functionality and includes a comprehensive JUnit testing suite. The project follows a modular architecture with domain-driven principles, providing a well-structured foundation for validation, data management, and maintainable code. This original version demonstrates my ability to design and implement functional software, apply object-oriented programming concepts, and create a maintainable, testable codebase.
+        </p>
+        <img src="images/original.jpg" alt="Original Artifact Screenshot">
+        <p>
+            <a href="https://github.com/JeremyCameron85/JeremyCameron85.github.io/tree/original_artifact" target="_blank">View original artifact on GitHub</a>
+        </p>
+    </section>
+
+    <!-- Enhancement 1 -->
+    <section id="enhancement1">
+        <h2>Enhancement 1 – Software Design and Engineering</h2>
+        <p>
+            For the software design and engineering artifact, I converted the entire project to a Node.js application with an Express backend, refactored it into a modular design, applied encapsulation principles, and improved validation to enhance security and maintainability. This process demonstrates my ability to adapt existing functionality to a modern framework, implement best practices in software design, and maintain code quality. Through this enhancement, I strengthened my understanding of modular architecture, reusable utilities, and software engineering principles while learning to manage the additional complexity of transitioning between languages and platforms.
+        </p>
+        <img src="images/enhancement1_screenshot.png" alt="Software Design and Engineering Artifact Screenshot">
+        <p>
+            <a href="https://github.com/JeremyCameron85/JeremyCameron85.github.io/tree/artifact_enhancement_1" target="_blank">View software design and engineering artifact on GitHub</a>
+        </p>
+    </section>
+
+    <!-- Enhancement 2 -->
+    <section id="enhancement2">
+        <h2>Enhancement 2 – Algorithms and Data Structure</h2>
+        <p>
+            For the algorithms and data structure artifact, I integrated a Trie data structure to enable efficient prefix-based searching for first names, last names, and task names. Rather than replacing the existing Map entirely, I combined the two structures to balance exact lookups with scalable prefix search, demonstrating my ability to evaluate trade-offs and apply data structures effectively. This process strengthened both the efficiency and clarity of the project while reinforcing modular design, encapsulation, and validation practices. Through this enhancement, I deepened my understanding of Tries, their memory management, and their interaction with other data structures, applying algorithmic knowledge in a practical, real-world software context.
+        </p>
+        <img src="images/enhancement2_screenshot.png" alt="Algorithms and Data Structure Artifact Screenshot">
+        <p>
+            <a href="https://github.com/JeremyCameron85/JeremyCameron85.github.io/tree/artifact_enhancement_2" target="_blank">View algorithms and data structure artifact on GitHub</a>
+        </p>
+    </section>
+
+    <!-- Enhancement 3 -->
+    <section id="enhancement3">
+        <h2>Enhancement 3 – Databases</h2>
+        <p>
+            For the databases artifact, I integrated MongoDB to provide persistent, scalable storage for contacts, tasks, and appointments, and developed a functional frontend using Handlebars to connect seamlessly with the backend and database. This process demonstrates my ability to incorporate new technologies into an existing application, implement database integration, and design a user interface that enables real-world interaction with the system. Through this enhancement, I strengthened my skills in full-stack development, data management, and connecting backend services to a frontend, while maintaining validation and data integrity. The experience also improved my project planning and time estimation, as I navigated the complexity of integrating a database-backed system with a functional user interface.
+        </p>
+        <img src="images/enhancement3_screenshot.png" alt="Databases Artifact Screenshot">
+        <p>
+            <a href="https://github.com/JeremyCameron85/JeremyCameron85.github.io/tree/artifact_enhancement_3" target="_blank">View databases artifact on GitHub</a>
+        </p>
+    </section>
 </body>
 </html>
