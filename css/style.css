@@ -80,11 +80,22 @@
             margin-top: 1em;
         }
 
-        a.button.small {
-           padding: 8px 16px;
-            font-size: 0.9em;
+        a.button:hover {
+            background-color: #005fa3;
         }
 
-        a.button:hover {
+         a.button.small {
+           display: inline-block;
+           padding: 8px 16px;
+           font-size: 0.9em;
+           background-color: #007aac;
+           color: white;
+           border-radius: 8px;
+           text-decoration: none;
+           font-weight: bold;
+           margin-top: 1em;
+        }
+
+        a.button.small:hover {
             background-color: #005fa3;
         }
