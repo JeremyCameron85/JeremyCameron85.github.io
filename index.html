@@ -13,6 +13,24 @@
             color: #333;
         }
 
+        nav {
+            background-color: #4a90e2;
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         .title-section {
             display: flex;
             flex-direction: column;
@@ -52,16 +70,33 @@
             border-radius: 8px;
             margin: 1em 0;
         }
-        a {
-            color: #4a90e2;
+        
+        a.button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007acc;
+            color: white;
+            border-radius: 8px;
             text-decoration: none;
+            font-weight: bold;
+            margin-top: 1em;
         }
-        a:hover {
-            text-decoration: underline;
+
+        a.button:hover {
+            background-color: #005fa3;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#self-assessment">Self-Assessment</a>
+        <a href="#original-artifact">Original Artifact</a>
+        <a href="#enhancement1">Enhancement 1</a>
+        <a href="#enhancement2">Enhancement 2</a>
+        <a href="#enhancement3">Enhancement 3</a>
+        <a href="https://youtu.be/DSoFzzOHXmw" target="_blank">Code Review</a>
+    </nav>
+    
     <div class="title-section">
         <h1>Jeremy Cameron</h1>
         <h2>SNHU CS499 Capstone Project</h2>
